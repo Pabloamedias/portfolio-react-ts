@@ -1,12 +1,20 @@
-import Navbar from "./components/DarkNavbar"
+import Navbar from "./components/Navbar"
+import Index from "./pages/Index"
+import { Routes, Route, BrowserRouter } from "react-router-dom"
 
 
-function App() {
+const App =() => {
 
   return (
     <>
+    
+    <BrowserRouter>
     <Navbar/>
-      <h1>Hello world!</h1>
+    <Routes>
+      <Route element={<Index/>} index></Route>
+
+    </Routes>
+    </BrowserRouter>
       
     </>
   )
