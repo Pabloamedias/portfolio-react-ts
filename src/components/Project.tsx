@@ -1,4 +1,5 @@
 import { DataProject } from "../interface";
+import  "../assets/styles.css"
 
 interface Props {
   project: DataProject;
@@ -16,7 +17,7 @@ const Project = ({ project }: Props) => {
             <a
               href={project.urlGithub}
               target="_blank"
-              className="btn btn-primary  "
+              className="btn btn-purple"
             >
               Ir al proyecto
             </a>

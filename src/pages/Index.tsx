@@ -1,13 +1,13 @@
 import ListOfProjects from "../components/ListOfProjects";
 import actualProjects from "../utils/actualProjects";
-const Index = () =>{
-    return (
-        <>
-                <h2 className="text-center m-4">Mis Proyectos</h2>
-        <ListOfProjects projects={actualProjects}  />
-        </>
-
-    )
-}
+import  "../assets/styles.css"
+const Index = () => {
+  return (
+    <>
+      <h1 className="text-center m-4 font-purple">Mis Proyectos</h1>
+      <ListOfProjects projects={actualProjects} />
+    </>
+  );
+};
 
 export default Index;

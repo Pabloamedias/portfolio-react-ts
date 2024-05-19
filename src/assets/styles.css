@@ -1,0 +1,19 @@
+.font-purple {
+    color: rgb(150, 58, 193);
+}
+
+.bg-purple {
+    background-color: rgb(150, 58, 193) ;
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: rgb(150, 58, 193);
+    border-color: rgb(150, 58, 193) ;
+    
+}
+.btn-purple:hover {
+    color:#fff;
+    background-color: rgb(105, 40, 135);
+    border-color: rgb(105, 40, 135);
+}
