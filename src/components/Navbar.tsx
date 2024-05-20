@@ -42,7 +42,7 @@ const Navbar = () => {
                 </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" target="_blank">
+                <a className="nav-link" href="https://drive.google.com/file/d/1O3Whs8wUS8YgJesjPpY_K6rCx-BhmFob/view?usp=sharing" target="_blank">
                   Curriculo
                 </a>
               </li>
