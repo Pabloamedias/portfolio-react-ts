@@ -3,5 +3,6 @@ export interface DataProject {
     title: string,
     urlImage: string,
     description: string,
-    urlGithub : string
+    urlDeployed : string
+    urlGitHub : string
 }
