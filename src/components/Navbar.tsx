@@ -7,6 +7,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-purple" data-bs-theme="dark">
         <div className="container-fluid m-1">
           <NavLink className="navbar-brand fs-4 fw-bold" to={"/"}>
+          <i className="fa-solid fa-briefcase me-1"></i>
             Portafolio
           </NavLink>
           <button
