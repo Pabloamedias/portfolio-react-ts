@@ -1,8 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
-import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
 import PublicLayout from "./layouts/PublicLayout";
 
