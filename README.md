@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple portfolio page made with React, TS and Vite.
 
-Currently, two official plugins are available:
+## Content
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Ussage](#ussage)
+- [Versions](#versions)
+- [ToDo](#todo)
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- clone or fork the project
+- open and change the src\utils\actualProjects.ts file
+- In this files you can add the projects you want to show
+- Just make sure to add all the mandatory elements
 
-- Configure the top-level `parserOptions` property like this:
+## Versions
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### v1.0.0
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Portfolio has 2 pages, index and profile
+- On index you have your main page, where the projects are shown
+- On profile, you hace a basic "about me" page, with the experience, education and skills
+- Theres a layout with styles, the navBar and the footer
+- Index work with 2 main components
+- For the moment, Index render projects that are place static in the src\utils\actualProjects.ts
+
+## ToDo
+
+- Index works with an external service to load the projects (an API for example)
+- Make some elements from profile to work with an external service
+- Make modal a single component instead of be located in the Navbar
+- Make Page component, with extra info of the projects
+- There will be N° pages for N° projects
