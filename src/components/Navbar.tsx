@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-purple" data-bs-theme="dark">
-        <div className="container-fluid m-1">
+        <div className="container-fluid">
           <NavLink className="navbar-brand fs-4 fw-bold" to={"/"}>
           <i className="fa-solid fa-briefcase me-1"></i>
             Portafolio
@@ -72,7 +72,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="modal-footer justify-content-center">
-        <button type="button" className="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" className="btn btn-purple " data-bs-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
