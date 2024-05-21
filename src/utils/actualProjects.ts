@@ -17,7 +17,7 @@ export default [
     },
     {
         id: 3,
-        title: 'Formulario petShop',
+        title: 'Formulario PetShop',
         urlImage: 'public/images/formulario_petshop.png',
         description: 'Un formulario sencillo pero con distintas validaciones hechas con Regex y JS.',
         urlDeployed: 'https://pabloamedias.github.io/PetShop_validacion-de-formulario/',
