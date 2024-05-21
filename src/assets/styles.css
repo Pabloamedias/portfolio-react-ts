@@ -1,3 +1,6 @@
+.layout-bg-indigo {
+    background: linear-gradient(to bottom,#ffffff,#e0cffc);
+}
 .font-purple {
     color: rgb(150, 58, 193);
 }
@@ -16,4 +19,9 @@
     color:#fff;
     background-color: rgb(105, 40, 135);
     border-color: rgb(105, 40, 135);
+}
+
+.alert-indigo {
+    background-color: #e0cffc;
+    border-color: rgb(150, 58, 193);
 }
