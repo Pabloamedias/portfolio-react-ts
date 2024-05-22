@@ -6,14 +6,13 @@ import PublicLayout from "./layouts/PublicLayout";
 
 const App = () => {
   return (
-
-        <Routes>
-          <Route element={<PublicLayout />} path="/">
-            <Route element={<Index />} index></Route>
-            <Route element={<Profile />} path="/perfil"></Route>
-            <Route element={<NotFound />} path="*"></Route>
-          </Route>
-        </Routes>
+    <Routes>
+      <Route element={<PublicLayout />}>
+        <Route index element={<Index />} />
+        <Route path="perfil" element={<Profile />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 };
 

@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
+const baseUrl = import.meta.env.VITE_BASE_URL
 const Profile = () => {
 
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
-    // Mostrar la alerta después de 2,5 segundos
     const showAlertTimeout = setTimeout(() => {
       setShowAlert(true);
     }, 2500);
 
-    // Cerrar la alerta después de 10 segundos
     const closeAlertTimeout = setTimeout(() => {
       setShowAlert(false);
-    }, 12500); // 10 segundos en total (12.5 segundos para cerrar - 2.5 segundos para mostrar)
+    }, 12500); 
 
-    // Limpiar los timeouts cuando el componente se desmonta
     return () => {
       clearTimeout(showAlertTimeout);
       clearTimeout(closeAlertTimeout);
@@ -36,7 +34,7 @@ const Profile = () => {
       <div className="container mt-5">
         <div className="row mx-5 my-2">
           <div className="col-md-12 col-lg-6">
-            <img src="/images/perfil_lego.png" alt="Foto real" />
+            <img src={`${baseUrl}/images/perfil_lego.png`} alt="Foto real" />
           </div>
           <div className="col-md-12 col-lg-6 mt-5">
             <h1 className="font-purple fw-bold">Pablo Olmedo</h1>
