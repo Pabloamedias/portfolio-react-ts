@@ -10,7 +10,7 @@ const Project = ({ project }: Props) => {
     <>
       <div className="col mb-4">
         <div className="card h-100">
-          <img src={project.urlImage} className="card-img-top" />
+          <img src={project.urlImage} className="card-img-top w-100 h-100" />
           <div className="card-body">
             <h5 className="card-title font-purple">{project.title}</h5>
             <p className="card-text">{project.description}</p>
@@ -18,7 +18,7 @@ const Project = ({ project }: Props) => {
               <a
                 href={project.urlDeployed}
                 target="_blank"
-                className="btn btn-purple"
+                className={`btn btn-purple ${!project.urlDeployed && 'disabled' }`}
               >
                 <i className="fa-solid fa-magnifying-glass m-1 me-1" />
                 Ver proyecto

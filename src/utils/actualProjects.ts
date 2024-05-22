@@ -32,5 +32,12 @@ export default [
         urlDeployed: 'https://pabloamedias.github.io/Fruta-fruto/',
         urlGitHub: 'https://github.com/Pabloamedias/Fruta-fruto/'
     },
+    {
+        id: 5,
+        title: 'Web Scraping',
+        urlImage: `${baseUrl}/images/web_scraping.png`,
+        description: 'Un proyecto que obtiene data de empresas mediante web scraping con cheerio.',
+        urlGitHub: 'https://github.com/Pabloamedias/web-scraping-ts'
+    },
 ]
 
