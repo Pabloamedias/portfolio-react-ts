@@ -123,8 +123,9 @@ const Profile = () => {
               <li>JS y TS</li>
               <li>Laravel</li>
               <li>Next</li>
-              <li>Bootstrap</li>
+              <li>Bootstrap, MaterialUi</li>
               <li>Tailwind</li>
+              <li>Formik, Yup</li>
             </ul>
           </div>
           <div className="col-md-12 col-lg-6">
@@ -134,6 +135,7 @@ const Profile = () => {
               <li>JS y TS</li>
               <li>RabbitMQ</li>
               <li>BBDD relacionales y no relaciones</li>
+              <li>Firebase</li>
               <li>Cheerio</li>
               <li>Puppeteer</li>
               <li>Nest</li>
@@ -144,6 +146,7 @@ const Profile = () => {
             <h4 className="font-purple">Otras Tecnologías</h4>
             <ul>
               <li>AWS</li>
+              <li>Postman</li>
               <li>Git, Github y Bitbucket</li>
               <li>Scrum</li>
               <li>Jest, TDD</li>
