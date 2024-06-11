@@ -3,6 +3,7 @@ import NotFound from "./pages/NotFound";
 import Index from "./pages/Index";
 import Profile from "./pages/Profile";
 import PublicLayout from "./layouts/PublicLayout";
+import ProjectPreview from "./pages/ProjectPreview";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Route element={<PublicLayout />}>
         <Route index element={<Index />} />
         <Route path="perfil" element={<Profile />} />
+        <Route path="proyectos/:slug" element={<ProjectPreview />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

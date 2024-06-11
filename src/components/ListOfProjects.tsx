@@ -1,5 +1,5 @@
 import { DataProject } from "../interface";
-import Project from "./Project";
+import CardProject from "./CardProject";
 
 interface Props {
   projects: DataProject[];
@@ -10,7 +10,7 @@ const ListOfProjects = ({ projects }: Props) => {
     <div className="container text-center">
       <div className="row row row-cols-1 row-cols-md-3 mb-3">
         {projects.map((project) => (
-          <Project key={project.id} project={project} />
+          <CardProject key={project.id} project={project} />
         ))}
       </div>
     </div>
