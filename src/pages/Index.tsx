@@ -1,6 +1,7 @@
 import ListOfProjects from "../components/ListOfProjects";
-import actualProjects from "../utils/actualProjects";
+import actualProjects from "../utils/actualProjects.json";
 import  "../assets/styles.css"
+
 const Index = () => {
   return (
     <>

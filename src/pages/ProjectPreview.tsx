@@ -1,8 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import NotFound from "./NotFound";
-import actualProjects from "../utils/actualProjects";
+import actualProjects from "../utils/actualProjects.json";
 import "../assets/styles.css";
 import { useState, useEffect } from "react";
+import addBaseUrlPath from "../helpers/addBaseUrlPath";
 
 const ProjectPreview = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -23,7 +24,7 @@ const ProjectPreview = () => {
       <div className="container">
         <h1 className="font-purple text-center fw-bold m-3">{project.title}</h1>
         <div className="m-3 border border-dark rounded">
-          <img className="img-fluid rounded " src={project.urlImage} alt="" />
+          <img className="img-fluid rounded " src={addBaseUrlPath(project.urlImage)} alt="" />
         </div>
         <p className="my-4 h6">{project.body}</p>
         <div className="d-grid gap-2">
