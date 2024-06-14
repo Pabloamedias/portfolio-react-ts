@@ -6,5 +6,5 @@ dotenv.config();
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_URL || '/',
+  base: process.env.VITE_BASE_URL || "/portfolio-react-ts/",
 });
