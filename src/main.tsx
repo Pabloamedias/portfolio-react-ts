@@ -1,13 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import { BrowserRouter } from 'react-router-dom'
-const baseUrl = import.meta.env.BASE_URL
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
+import { BrowserRouter } from "react-router-dom";
+import { ProjectsProvider } from "./context/ProjectsContext";
+const baseUrl = import.meta.env.BASE_URL;
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter basename={baseUrl}>
-    <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-)
+    <ProjectsProvider>
+      <BrowserRouter basename={baseUrl}>
+        <App />
+      </BrowserRouter>
+    </ProjectsProvider>
+  </React.StrictMode>
+);
