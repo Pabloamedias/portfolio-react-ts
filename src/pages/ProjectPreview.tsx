@@ -1,15 +1,21 @@
 import { useParams, Link } from "react-router-dom";
 import NotFound from "./NotFound";
-import actualProjects from "../utils/actualProjects.json";
 import "../assets/styles.css";
 import { useState, useEffect } from "react";
 import addBaseUrlPath from "../helpers/addBaseUrlPath";
+import { useProjects } from "../context/ProjectsContext";
 
 const ProjectPreview = () => {
   const [showAlert, setShowAlert] = useState(false);
 
+  const { projects } = useProjects();
+
+  if (projects === null) {
+    return <NotFound />;
+  }
+
   const { slug } = useParams();
-  const project = actualProjects.find((project) => project.slug === slug);
+  const project = projects.find((project) => project.slug === slug);
   if (project === undefined) {
     return <NotFound />;
   }
@@ -24,7 +30,11 @@ const ProjectPreview = () => {
       <div className="container">
         <h1 className="font-purple text-center fw-bold m-3">{project.title}</h1>
         <div className="m-3 border border-dark rounded">
-          <img className="img-fluid rounded " src={addBaseUrlPath(project.urlImage)} alt="" />
+          <img
+            className="img-fluid rounded "
+            src={addBaseUrlPath(project.urlImage)}
+            alt=""
+          />
         </div>
         <p className="my-4 h6">{project.body}</p>
         <div className="d-grid gap-2">
@@ -44,14 +54,10 @@ const ProjectPreview = () => {
             <i className="fa-brands fa-github m-1 me-1" />
             Ir al repositorio
           </a>
-          <Link
-            to={"/"}
-            className="btn btn-purple"
-          >
+          <Link to={"/"} className="btn btn-purple">
             <i className="fa-solid fa-house m-1 me-1" />
             Volver a los proyectos
           </Link>
-
         </div>
         <div
           id="myAlert"
