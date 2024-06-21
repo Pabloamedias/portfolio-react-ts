@@ -10,12 +10,14 @@ A simple portfolio page made with React, TS, Vite and firebase.
 
 ## Usage
 
+### For v1.0.0 version
+
 - Clone or fork the project
 - Open and change the src\utils\actualProjects.ts file
 - In this files you can add the projects you want to show
 - Just make sure to add all the required elements, you can see clearly on the interface.ts file
 
-### For v1.2.0 version
+### For v1.2.0 or newers versions
 From this version onwards the application ONLY works with a firebase connection, you gonna need that connection to work properly.
 
 ## Versions
@@ -45,3 +47,4 @@ From this version onwards the application ONLY works with a firebase connection,
 - Make Page component, with extra info of the projects ✅
 - There will be N° pages for N° projects ✅
 - Create an alert in case the petition to the database fails
+- Store the images on an external service instead of the project itself

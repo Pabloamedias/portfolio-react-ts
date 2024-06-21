@@ -34,7 +34,7 @@ const Profile = () => {
       <div className="container mt-5">
         <div className="row mx-5 my-2">
           <div className="col-md-12 col-lg-6">
-            <img className="img-fluid" src={`${baseUrl}/images/perfil_lego_new.png`} alt="Foto real" />
+            <img className="img-fluid" src={`${baseUrl}images/perfil_lego_new.png`} alt="Foto real" />
           </div>
           <div className="col-md-12 col-lg-6 mt-5">
             <h1 className="font-purple fw-bold">Pablo Olmedo</h1>
