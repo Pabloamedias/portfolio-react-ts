@@ -1,17 +1,17 @@
 # Portfolio
 
-A simple portfolio page made with React, TS and Vite.
+A simple portfolio page made with React, TS, Vite and firebase.
 
 ## Content
 
-- [Ussage](#ussage)
+- [Usage](#usage)
 - [Versions](#versions)
 - [ToDo](#todo)
 
 ## Usage
 
-- clone or fork the project
-- open and change the src\utils\actualProjects.ts file
+- Clone or fork the project
+- Open and change the src\utils\actualProjects.ts file
 - In this files you can add the projects you want to show
 - Just make sure to add all the mandatory elements
 
@@ -26,10 +26,19 @@ A simple portfolio page made with React, TS and Vite.
 - Index work with 2 main components
 - For the moment, Index render projects that are place static in the src\utils\actualProjects.ts
 
+### v1.2.0
+- Portfolio has 2 static pages, index and profile and 1 dynamic page, projects
+- The dynamic page work with path params, but only show a valid page
+- On index you have your main page, where the projects are shown
+- On profile, you hace a basic "about me" page, with the experience, education and skills
+- Theres a layout with styles, the navBar and the footer
+- Now the project works with a connection to firebase, with a realtime database
+
 ## ToDo
 
-- Index works with an external service to load the projects (an API for example)
+- Index works with an external service to load the projects (an API for example) ✅
 - Make some elements from profile to work with an external service
 - Make modal a single component instead of be located in the Navbar
-- Make Page component, with extra info of the projects
-- There will be N° pages for N° projects
+- Make Page component, with extra info of the projects ✅
+- There will be N° pages for N° projects ✅
+- Create an alert in case the petition to the database fails
